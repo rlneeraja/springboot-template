@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: About-Rest
+
+server:
+  context-path: /serviceContext
+  port: 10000
+  apiContext: api
+  versionContext: v
+
