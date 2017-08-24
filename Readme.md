@@ -1,4 +1,4 @@
-
+# Intro
 This is a bootstrap project for SpringBoot REST type projects.
 
 It includes several basic configurations
@@ -14,7 +14,7 @@ It includes several basic configurations
 
 The project also is setup to use RestAssured for testing purposes. A quick example is given on the included unit test.
 
-#How to Use this project
+# How to Use this project
 In order to use this project as a bootstrap, you can start by cloning it to your local machine
 (or simply download the zip file since this won't be your final git repo)
 
