@@ -18,6 +18,17 @@ The project also is setup to use RestAssured for testing purposes. A quick examp
 In order to use this project as a bootstrap, you can start by cloning it to your local machine
 (or simply download the zip file since this won't be your final git repo)
 
+You can also create a new repostiory by "importing" this repo. Simply click on **"New Project"**
+and choose **"Repo by URL"** under **Import from project**.
+
+You can provide the URL of this repository, passing username and password along with it:
+
+Ex.:
+<code>https://mcaldas:mypassword@gitlab.sandbox.aimsplatform.com/eip/springboot_template.git</code>
+
+Give a new name for your repository and don't cheche the "Mirror repository" checkbox,
+since the two repos will diverge and don't need to be synced.
+
 After cloning follow the necessary steps for your scenario:
 * Rename SpringRESTBootstrap main class to a more appropriate name for your project
 * Rename "services" package to a more appropriate name for your project
