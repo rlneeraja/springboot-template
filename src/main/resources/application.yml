@@ -8,3 +8,7 @@ server:
   apiContext: api
   versionContext: v
 
+configuration:
+  pageInfo:
+    maxPageSize: 100
+    defaultPageSize: 20

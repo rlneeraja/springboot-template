@@ -3,11 +3,15 @@ package gov.cdc.ncezid.eip.services.controller;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import gov.cdc.ncezid.eip.rest.ApiVersion;
 import gov.cdc.ncezid.eip.services.About;
+import gov.cdc.ncezid.eip.services.EIPServiceConfig;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.ws.rs.core.Response;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -23,6 +27,9 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 public class InfoServiceController {
     @Autowired
     private About about;
+
+    @Autowired
+    private EIPServiceConfig config;
 
     @RequestMapping(value="/about", method = GET)
            // produces = {"application/cdc.info.about-v1+json"}) //This forces Safari to download the file instead of opening it on the browser.
@@ -41,6 +48,11 @@ public class InfoServiceController {
         return "Hello There! I'm alive.\nYou pinged me at " + ZonedDateTime.now().format(DateTimeFormatter.ISO_INSTANT);
     }
 
+    @RequestMapping(value = "/config", produces = "application/json")
+
+    public EIPServiceConfig getConfig() {
+        return config;
+    }
 
 }
 

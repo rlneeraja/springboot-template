@@ -19,6 +19,23 @@
 			"response": []
 		},
 		{
+			"name": "Config",
+			"request": {
+				"url": "{{URL}}/serviceContext/api/v1/info/config",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
 			"name": "VERSION",
 			"request": {
 				"url": "{{URL}}/serviceContext/api/v1/info/version",
